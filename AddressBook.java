@@ -26,13 +26,15 @@ public class AddressBook {
 //        StdOut.println("What would you like to do?");
         
         StdOut.print("Name: ");
-        String newName = StdIn.readString();
+        String newName = StdIn.readLine();
         StdOut.print("Age: ");
         int newAge = StdIn.readInt();
+        StdOut.print("Job: ");
+        String newJob = StdIn.readLine();
         
-        person testPerson = new person(newName, newAge);
+        person testPerson = new coWorker(newName, newAge, newJob);
         
-        StdOut.println("You have created " + testPerson.getName() + " who is " + testPerson.getAge() + " years old!");
+        StdOut.println("You have created " + testPerson.getName() + " who is " + testPerson.getAge() + " years old!  You guys worked together at " + testPerson.getJob() ".");
     }
     
 }
