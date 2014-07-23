@@ -30,11 +30,12 @@ public class AddressBook {
         StdOut.print("Age: ");
         int newAge = StdIn.readInt();
         StdOut.print("Job: ");
-        String newJob = StdIn.readLine();
+        String newJob = StdIn.readString();
         
-        person testPerson = new coWorker(newName, newAge, newJob);
+        coWorker testPerson = new coWorker(newName, newAge, newJob);
         
-        StdOut.println("You have created " + testPerson.getName() + " who is " + testPerson.getAge() + " years old!  You guys worked together at " + testPerson.getJob() ".");
+        StdOut.println("You have created " + testPerson.getName() + " who is " + testPerson.getAge() + " years old!  You guys worked together at " + testPerson.getJob() + ".");
+       
     }
     
 }
